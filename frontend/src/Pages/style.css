@@ -1,0 +1,106 @@
+.homePage:after {
+  content: "";
+  z-index: -1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.561), rgba(0, 0, 0, 0.709)),
+    url("../assets/background2.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -5%;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  animation: slide 7s linear infinite alternate;
+  box-sizing: border-box;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(2%);
+  }
+  to {
+    transform: translateY(-2%);
+  }
+}
+
+.logoSlogan {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.226);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  display: flex;
+  padding: 30px;
+  border-radius: 1rem;
+  width: 90%;
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #ff6b00,
+    #ff8c00,
+    #ffb300,
+    #ffcc00
+  );
+  box-shadow: 0 4px 15px 0 rgba(255, 128, 0, 0.75);
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.chatPage:after {
+  content: "";
+  z-index: -1;
+  /* background-color: rgb(77,151,196); */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.box {
+  margin-top: 50px;
+  width: 20rem;
+  background-color: rgba(255, 255, 255, 0.134);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px 0 rgba(255, 128, 0, 0.75);
+  padding: 0 !important;
+}
+
+.loginSignup label {
+  color: white;
+}
+
+.loginSignup input {
+  color: white !important;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "gap-de",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "start:prod": "cd client && npm install && npm run build && cd .. && npm start"
+  },
+  "keywords": [
+    "mern",
+    "gap-de"
+  ],
+  "author": "Mansoor Niazi",
+  "license": "ISC",
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^8.3.0",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.9",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.1.2"
+  }
+}

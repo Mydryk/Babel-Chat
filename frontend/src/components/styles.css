@@ -1,0 +1,45 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+@keyframes hang {
+  from {
+    transform: translateY(-30%);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.deleteIcon:hover {
+  filter: none;
+}
+
+.infoIcon:hover {
+  filter: none;
+}
+
+.typingIndicator span:before {
+  animation: dots 2s linear infinite;
+  content: "";
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    content: ".";
+  }
+  40% {
+    content: "..";
+  }
+  60% {
+    content: "...";
+  }
+  90%,
+  100% {
+    content: "";
+  }
+}
